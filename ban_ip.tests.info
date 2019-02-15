@@ -1,0 +1,5 @@
+[BanIPAddressBlockingTestCase]
+name = IP blocking functionality
+description = Test Ban IP functionality.
+group = Ban IP
+file = ban_ip.test
