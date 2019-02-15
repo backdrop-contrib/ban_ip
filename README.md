@@ -22,6 +22,7 @@ To remove the ban from an IP address:
 
 
 IP blocking via `settings.php`
+------------------------------
 
 To bypass database queries for denied IP addresses, use this setting.
 
