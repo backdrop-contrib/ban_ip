@@ -56,8 +56,8 @@ complete text.
 Current Maintainers
 -------------------
 
-- Wilmoth Andy Shillingford (https://github.com/docwilmot)
-- (seeking additional maintainers)
+- [Wilmoth Andy Shillingford](https://github.com/docwilmot)
+- [Robert J. Lang](https://github.com/bugfolder)
 
 Credits
 -------
