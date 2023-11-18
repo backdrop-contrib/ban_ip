@@ -9,7 +9,15 @@
  */
 function ban_ip_schema() {
 
-  $version = (int) db_query('
+  // Get the version. Possible values are:
+  // FALSE -- ban_ip has never been installed, so we must be in installation.
+  // -1 -- ban_ip was previously installed, then uninstalled. We must be in
+  //   reinstallation.
+  // 0 -- the old version is currently installed. We're in normal usage or
+  //   uninstallation.
+  // 1000+ -- The current version is currently installed. We're in normal usage
+  //   or uninstallation.
+  $version = db_query('
     SELECT schema_version
     FROM {system}
     WHERE name = :name
